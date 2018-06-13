@@ -1,5 +1,6 @@
 /**
  * 注意：这不是真正的GUID，无法在Javascript中生成真正的GUID，因为它们依赖于浏览器不公开的本地计算机的属性。
+ * 可以配合时间戳：md5(uuid.uuid() + new Date().getTime())重复性更小
  */
 (function(){   
     var _uuid = {
